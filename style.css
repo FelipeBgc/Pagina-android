@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'person';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --corcabeçalho: #247c4b;
+    --cormain: #84e1ad;
+    --corh3: #2fa866;
+    --corvideo: #1a5c38;
+}
+
+body{
+    background-color: var(--cormain);
+}
+
+header{
+    padding: 3em;
+    background-image: linear-gradient(#38ca79,#247c4b);
+
+    & h1{
+        font-size: 2.80em;
+        margin-bottom: .50em;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+
+    & p{
+        font-size: 1.10em;
+        margin-bottom: .50em;
+        color: white;
+        text-align: center;
+    }
+}
+
+nav{
+    padding-bottom: .40em;
+    background-color: var(--corcabeçalho);
+
+    & a{
+        text-decoration: none;
+        color: white;
+        margin-left: 1.30em;
+        font-size: 18px;
+    }
+}
+
+a:hover{
+    padding: .40em;
+    background-color: #1a5c38;
+}
+
+main{
+    font-size: larger;
+    text-align: justify;
+}
+
+article{
+    background-color: white;
+    min-width: 445px;
+    max-width: 700px;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0 0 .70em .70em;
+}
+
+h2{
+    font-family: 'person', sans-serif;
+    font-weight: normal;
+    font-size: 1.30em;
+    margin-bottom: .40em;
+    color: var(--corvideo);
+    text-align: justify;
+}
+
+h3{
+    font-family: 'person', sans-serif;
+    font-weight: normal;
+    margin-top: .60em;
+    margin-bottom: .60em;
+    background-image: linear-gradient(to right, #84e1ad,white);
+    color: var(--corvideo);
+    font-size: 1.60em;
+    text-align: justify;
+}
+
+img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.cinco{
+    min-width: 400px;
+    max-width: 700px;
+    margin-top: .50em;
+   
+    & iframe{
+        background-color: var(--corvideo);
+        padding: .95em;
+        width: 96%;
+    }
+}
+
+#curiosidades{
+    min-width: 420px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 0 0 .80em .80em;
+
+    & aside{
+        background-color: #2fa86538;
+        border-radius: .70em .70em .70em .70em;
+        margin-bottom: .50em;
+    }
+
+    & h4{
+        background-color: var(--corh3);
+        color: white;
+        border-radius: .70em .70em 0 0;
+        padding: .50em;
+        font-size: larger;
+    }
+
+    & p{
+        padding: .50em;
+    }
+    
+    & section{
+        padding: 1em;
+        display: flex;
+        gap: 8em; 
+        min-width: 390px ;
+    }
+
+    & .tres{
+        padding-left: 1em;
+    }
+}
+
+footer>p{
+    text-align: center;
+    background-color: var(--corcabeçalho);
+    color: white;
+    padding-top: .50em;
+    padding-bottom: .50em;
+}
